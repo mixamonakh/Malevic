@@ -1,0 +1,45 @@
+.button {
+    width: 300px;
+    height: 80px;
+    background: $red;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    outline: none;
+    transition: .3s;
+    &:hover {
+        transform: scale(102%);
+    }
+    &_black {
+        background: #000;
+    }
+    &_members {
+        width: 383.6px;
+        display: block;
+        margin: 0 auto;
+        order: 3;
+    }
+}
+
+@media( max-width: 768px ){
+    .button {
+        &_members {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media( max-width: 576px ){
+    .button {
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+        &_members {
+            width: 80%;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

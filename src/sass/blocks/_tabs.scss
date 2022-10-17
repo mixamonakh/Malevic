@@ -5,6 +5,7 @@
     width: 100%;
     transform: translateY(10%);
     &__tab {
+        transition: .3s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,14 +16,57 @@
         font-weight: 700;
         font-size: 20px;
         color: #4F4F4F;
+        cursor: pointer;
+        &_hover-left{
+            &:hover {
+                margin-right: 5px;
+            }
+        }
+        &_hover-mid{
+            &:hover {
+                margin: 0 5px;
+            }
+        }
+        &_hover-right{
+            &:hover {
+                margin-left: 5px;
+            }
+        }
+        &:hover {
+            transform: scale(101%);
+            width: 32%;
+        }
         &_active {
+            color: #fff;
             background: linear-gradient(262.25deg, #1C86B3 58.76%, #03415B 120.44%);
             border-radius: 7px;
             height: 80px;
         }
     }
     &__content {
+        display: none;
         background: #EEEEEE;
         padding: 40px 20px 80px 20px;
+        &_active {
+            display: block;
+        }
+    }
+}
+
+@media( max-width: 768px ){
+    .tabs {
+        &__tab {
+            font-size: 18px;
+        }
+    }
+}
+
+@media( max-width: 576px ){
+    .tabs {
+        &__tab {
+            font-size: 15px;
+            height: 60px;
+            text-align: center;
+        }
     }
 }

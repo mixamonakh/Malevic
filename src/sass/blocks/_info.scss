@@ -28,3 +28,16 @@
         margin-right: 36px;
     }
 }
+
+@media( max-width: 768px ){
+
+}
+
+@media( max-width: 576px ){
+    .info {
+        &__tasks {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

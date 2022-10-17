@@ -1,8 +1,9 @@
 .advantages {
     background: linear-gradient(68.25deg, #FCFCFC 72.08%, #1C86B3 131.99%);
     border-radius: 7px;
-    padding: 26px 0 20px 10px;
+    padding: 26px 10px 20px 10px;
     min-height: 100%;
+    transition: .3s;
     &__title {
         font-weight: 700;
         font-size: 20px;
@@ -18,4 +19,15 @@
         color: $red;
         font-weight: 700;
     }
+    &:hover {
+        border-top-right-radius: 20px;
+    }
+}
+
+@media( max-width: 768px ){
+
+}
+
+@media( max-width: 576px ){
+
 }

@@ -1,0 +1,14 @@
+.accordion {
+    transition: 0.5s;
+}
+
+.active_accordion, .accordion:hover {
+    background-color: #ff4545;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-top: 20px;
+}
