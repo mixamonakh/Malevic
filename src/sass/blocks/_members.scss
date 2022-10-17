@@ -1,0 +1,22 @@
+.members {
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+    &__grid-wrapper {
+        display: grid;
+        grid: 1fr / repeat(5, 190px);
+        gap: 67px;
+        margin-bottom: 57px;
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 7px;
+        height: 173px;
+        padding: 0 10px;
+    }
+}

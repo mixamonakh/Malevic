@@ -1,0 +1,18 @@
+.button {
+    width: 300px;
+    height: 80px;
+    background: $red;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    line-height: 23px;
+    color: #fff;
+    &_black {
+        background: #000;
+    }
+    &_members {
+        width: 383.6px;
+        display: block;
+        margin: 0 auto;
+    }
+}

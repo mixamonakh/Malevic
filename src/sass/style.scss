@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'elements/buttons';
+
+* {
+    font-family: 'Futura LT', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+// Стили блоков:
+
+@import 'blocks/header';
+@import 'blocks/tabs';
+@import 'blocks/grid-wrapper';
+@import 'blocks/info';
+@import 'blocks/advantages';
+@import 'blocks/members';
+// @import 'blocks';
+// @import 'blocks';
+// @import 'blocks';
+// @import 'blocks';

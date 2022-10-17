@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Futura LT';
+    font-display: swap;
+    src: local('Futura LT-400'),
+        url('../fonts/FuturaLT.woff2') format('woff2'),
+        url('../fonts/FuturaLT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    font-display: swap;
+    src: local('Futura LT-700'),
+    url('../fonts/FuturaLT-Bold.woff2') format('woff2'),
+    url('../fonts/FuturaLT-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

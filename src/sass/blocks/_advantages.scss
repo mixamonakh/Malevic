@@ -1,0 +1,21 @@
+.advantages {
+    background: linear-gradient(68.25deg, #FCFCFC 72.08%, #1C86B3 131.99%);
+    border-radius: 7px;
+    padding: 26px 0 20px 10px;
+    min-height: 100%;
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    &__list {
+        font-size: 18px;
+        counter-reset: num;
+    }
+    &__item::before {
+        content: '0'counter(num) '. ';
+        counter-increment: num;
+        color: $red;
+        font-weight: 700;
+    }
+}
